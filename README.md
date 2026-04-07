@@ -2,20 +2,15 @@
 
 ## Overview
 
-The Automated Data Reporting System is a Python-based automation project that processes Excel data, generates visual insights, creates PDF reports, and streamlines reporting workflows. This project demonstrates practical data automation and reporting techniques commonly used in business environments.
-
----
+This project is an automated data reporting system built using Python. It reads data from Excel files, processes and analyzes it, generates visual insights, and creates PDF reports. The system can be scheduled to run automatically, making it suitable for real-world business reporting workflows.
 
 ## Features
 
-* Reads data from Excel files
-* Processes and aggregates data using Pandas
+* Reads and processes Excel data using Pandas
 * Generates charts using Matplotlib
 * Creates PDF reports using ReportLab
-* Logs execution details for debugging and monitoring
-* Supports automation via Task Scheduler or cron jobs
-
----
+* Logs execution details for monitoring and debugging
+* Supports automation via Task Scheduler
 
 ## Tech Stack
 
@@ -25,116 +20,54 @@ The Automated Data Reporting System is a Python-based automation project that pr
 * OpenPyXL
 * ReportLab
 
----
-
 ## Project Structure
 
 ```
 automation_project/
 │
 ├── data/
-│   └── sales.xlsx
-│
 ├── output/
-│   ├── charts/
-│   └── report.pdf
-│
 ├── logs/
-│   └── app.log
-│
 ├── src/
 │   ├── config.py
-│   ├── logger.py
 │   ├── data_processing.py
 │   ├── visualization.py
 │   ├── report_generator.py
 │   ├── email_sender.py
 │   └── main.py
-│
-├── requirements.txt
-└── README.md
 ```
-
----
 
 ## Installation
 
-1. Clone the repository
-
 ```
-git clone https://github.com/your-username/auto-data-report-generator.git
-cd auto-data-report-generator
-```
-
-2. Create a virtual environment (optional but recommended)
-
-```
-python -m venv venv
-venv\Scripts\activate
-```
-
-3. Install dependencies
-
-```
+git clone https://github.com/Piyush9228/Automated-data-reporting-system.git
+cd Automated-data-reporting-system
 pip install -r requirements.txt
 ```
 
----
-
 ## Usage
-
-1. Place your Excel file inside the `data/` folder
-2. Update configuration in `src/config.py` if needed
-3. Run the project:
 
 ```
 python src/main.py
 ```
 
----
-
 ## Output
 
-* Chart image generated in:
-
-```
-output/charts/sales_chart.png
-```
-
-* PDF report generated in:
-
-```
-output/report.pdf
-```
-
-* Logs stored in:
-
-```
-logs/app.log
-```
-
----
+* Chart: `output/charts/sales_chart.png`
+* Report: `output/report.pdf`
+* Logs: `logs/app.log`
 
 ## Automation
 
-This project can be scheduled to run automatically using:
-
-* Windows Task Scheduler
-* Cron jobs (Linux/macOS)
-
-Example: Schedule the script to run daily at a fixed time to automate reporting.
-
----
+The project can be scheduled using Windows Task Scheduler to run automatically at a specified time, enabling hands-free reporting.
 
 ## Future Enhancements
 
-* Add Streamlit dashboard for visualization
-* Integrate cloud storage (AWS S3, Google Drive)
-* Add email notifications with attachments
-* Implement real-time data processing
+* Add Streamlit dashboard
+* Integrate email notifications
+* Deploy using Docker
+* Add cloud storage support
 
----
+## Author
 
-## License
-
-This project is open-source and available for educational purposes.
+Piyush Kumar
